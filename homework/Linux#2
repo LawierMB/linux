@@ -1,0 +1,39 @@
+marek@Marek-VirtualBox:~/folder1$ cat selected.txt commands.txt 
+198 processes.txt
+83:message+     608  0.0  0.3   9944  6464 ?        Ss   18:39   0:01 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+86:root         616  0.0  0.9  50488 20180 ?        Ss   18:39   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+97:root         737  0.0  1.1 129272 22652 ?        Ssl  18:39   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+103:whoopsie     776  0.0  0.7 326868 15704 ?        Ssl  18:39   0:00 /usr/bin/whoopsie -f
+115:marek       1387  0.0  0.9 1493708 19460 ?       S<sl 18:41   0:02 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+117:marek       1391  0.0  0.4  11744  9024 ?        Ss   18:41   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+125:marek       1449  0.0  0.4 251708  8152 ?        Sl   18:41   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+128:marek       1467  0.0  0.3 175348  6440 tty2     Ssl+ 18:41   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+130:marek       1491  0.0  0.3 251224  7664 ?        Sl   18:41   0:00 /usr/bin/gnome-keyring-daemon --start --foreground --components=secrets
+132:marek       1571  0.0  0.0  33772   364 ?        S    18:41   0:00 /usr/bin/VBoxClient --clipboard
+133:marek       1573  0.0  0.2 166040  4124 ?        Sl   18:41   0:00 /usr/bin/VBoxClient --clipboard
+134:marek       1581  0.0  0.0  33772   356 ?        S    18:41   0:00 /usr/bin/VBoxClient --seamless
+135:marek       1582  0.0  0.1 166008  2684 ?        Sl   18:41   0:00 /usr/bin/VBoxClient --seamless
+136:marek       1586  0.0  0.0  33772   364 ?        S    18:41   0:00 /usr/bin/VBoxClient --draganddrop
+137:marek       1587  0.2  0.1 166524  2652 ?        Sl   18:41   0:12 /usr/bin/VBoxClient --draganddrop
+138:marek       1591  0.0  0.0  33772   360 ?        S    18:41   0:00 /usr/bin/VBoxClient --vmsvga
+139:marek       1592  0.0  0.1 168288  3576 ?        Sl   18:41   0:00 /usr/bin/VBoxClient --vmsvga
+140:marek       1606  0.0  0.0   6040   460 ?        Ss   18:41   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+142:marek       1636  0.0  0.2   7248  4276 ?        S    18:41   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+145:marek       1680  1.2 17.9 4246336 366176 ?      Ssl  18:41   1:12 /usr/bin/gnome-shell
+156:marek       1765  0.0  1.3 2610016 26808 ?       Sl   18:41   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+    1  mkdir folder1
+    2  cd folder1
+    3  touch processes.txt
+    4  ps aux > processes.txt
+    5  cp processes.txt copy.txt
+    6  mkdir backup
+    7  mv copy.txt backup/
+    8  ls
+    9  wc -l processes.txt 
+   10  wc -l processes.txt > selected.txt
+   11  grep -rni /bin processes.txt >> selected.txt
+   12  history
+   13  history | tail -n > commands.txt
+   14  history | tail -n13 > commands.txt
+   15  history | tail -n15 > commands.txt
+marek@Marek-VirtualBox:~/folder1$ 
