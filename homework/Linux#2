@@ -33,7 +33,7 @@ marek@Marek-VirtualBox:~/folder1$ cat selected.txt commands.txt
     9  mkdir backup
    10  mv copy.txt backup/
    11  wc -l processes.txt > selected.txt
-   12  grep '/bin' processes.txt >> selected.txt
+   12  grep /bin processes.txt >> selected.txt
    13  history
    14  history | tail -n14 > commands.txt
    15  cat selected.txt commands.txt 
