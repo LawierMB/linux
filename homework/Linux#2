@@ -14,14 +14,14 @@ marek@Marek-VirtualBox:~/folder1$ cat selected.txt commands.txt
 128:marek       1607  0.0  0.0  33772   360 ?        S    11:05   0:00 /usr/bin/VBoxClient --seamless
 129:marek       1609  0.0  0.1 166008  2652 ?        Sl   11:05   0:00 /usr/bin/VBoxClient --seamless
 130:marek       1612  0.0  0.0  33772   360 ?        S    11:05   0:00 /usr/bin/VBoxClient --draganddrop
-131:marek       1613  0.1  0.1 166524  2760 ?        Sl   11:05   0:09 /usr/bin/VBoxClient --draganddrop
+131:marek       1613  0.1  0.1 166524  2760 ?        Sl   11:05   0:10 /usr/bin/VBoxClient --draganddrop
 132:marek       1617  0.0  0.0  33772   364 ?        S    11:05   0:00 /usr/bin/VBoxClient --vmsvga
 133:marek       1618  0.0  0.1 168288  3604 ?        Sl   11:05   0:00 /usr/bin/VBoxClient --vmsvga
 134:marek       1632  0.0  0.0   6040   456 ?        Ss   11:05   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
 136:marek       1662  0.0  0.2   7248  4312 ?        S    11:05   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
-139:marek       1707  1.5 18.4 4248088 376208 ?      Ssl  11:05   1:11 /usr/bin/gnome-shell
+139:marek       1707  1.3 18.5 4248344 376508 ?      Ssl  11:05   1:19 /usr/bin/gnome-shell
 151:marek       1801  0.0  1.3 2610012 26648 ?       Sl   11:05   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
-180:marek       2443  0.1  7.1 926184 145796 ?       SNl  11:06   0:05 /usr/bin/python3 /usr/bin/update-manager --no-update --no-focus-on-map
+180:marek       2443  0.0  7.1 926184 145796 ?       SNl  11:06   0:05 /usr/bin/python3 /usr/bin/update-manager --no-update --no-focus-on-map
     1  mkdir folder1
     2  ls
     3  cd folder1
@@ -31,21 +31,12 @@ marek@Marek-VirtualBox:~/folder1$ cat selected.txt commands.txt
     7  cp processes.txt copy.txt
     8  ls
     9  mkdir backup
-   10  ls
-   11  mv copy.txt backup/
-   12  ls
-   13  cd backup
-   14  ls
-   15  cd ..
-   16  ls
-   17  wc -l processes.txt > selected.txt
-   18  ls
-   19  grep -rni "/bin"  processes.txt >> selected.txt
-   20  ls
-   21  history
-   22  history | tail -n22 > commands.txt
-   23  history
-   24  cat selected.txt commands.txt 
-   25  history
-   26  history | tail -n26 > commands.txt
+   10  mv copy.txt backup/
+   11  wc -l processes.txt > selected.txt
+   12  grep -n "/bin"  processes.txt >> selected.txt
+   13  history
+   14  history | tail -n14 > commands.txt
+   15  cat selected.txt commands.txt 
+   16  history
+   17  history | tail -n17 > commands.txt
 marek@Marek-VirtualBox:~/folder1$ 
